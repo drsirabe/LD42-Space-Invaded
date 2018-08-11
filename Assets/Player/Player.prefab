@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 135451002823394226}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 5595abed14ff1b540a97dad668e34469, type: 2}
+  - {fileID: 2100000, guid: 5b36b75ad52a51a428d49299b10a3d2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -278,12 +278,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1f75df29d308544bdfca155083de71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbitalSpeed: 100
+  orbitalSpeed: 75
+  planetMaxHealth: 1000
   projectileSpeed: 1
-  projectileFireRate: 0.1
+  projectileFireRate: 0.2
   orbiter1: {fileID: 1011998838174208}
   orbiter2: {fileID: 1236725646192848}
   projectile: {fileID: 1815059992188196, guid: 5bf11e8b8273fc349bdee8a4d93d073b, type: 2}
+  planetHealthText: {fileID: 0}
 --- !u!135 &135451002823394226
 SphereCollider:
   m_ObjectHideFlags: 1
