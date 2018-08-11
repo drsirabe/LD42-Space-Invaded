@@ -633,7 +633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1718629603509600, guid: ef8170efe96fbec458c0a6400b970801,
     type: 2}
-  timeBetweenSpawns: 2
+  maxTimeBetweenSpawns: 5
+  minTimeBetweenSpawns: 2
+  timeBetweenSpawnsDecrement: 0.2
   spawningOrbitRadius: 15
 --- !u!1 &2096642685
 GameObject:
