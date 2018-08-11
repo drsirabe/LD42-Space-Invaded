@@ -10,4 +10,9 @@ public class Projectile : MonoBehaviour {
         return Damage;
     }
 
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
 }

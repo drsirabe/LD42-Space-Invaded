@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -22,9 +23,34 @@ public class GameManager : MonoBehaviour {
 
         if(timeRemaining <= 0f)
         {
-            //complete level
+            NextLevel();
         }
     }
 
+    public void NextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void WinScreen()
+    {
+        SceneManager.LoadScene("Win");
+    }
+
+    public void LoseScreen()
+    {
+        SceneManager.LoadScene("Lose");
+    }
+
+    public void MenuScreen()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
 }
