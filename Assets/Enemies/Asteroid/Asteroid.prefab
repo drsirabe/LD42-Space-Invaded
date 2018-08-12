@@ -88,7 +88,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1861753271409554}
-  m_Mesh: {fileID: 4300000, guid: a2ca149b09862f245a0a0f2bec3c2c87, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 760e2a97ec0639242b9e0e506da53ba4, type: 3}
 --- !u!54 &54250213856994002
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -117,7 +117,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: a2ca149b09862f245a0a0f2bec3c2c87, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 760e2a97ec0639242b9e0e506da53ba4, type: 3}
 --- !u!114 &114176751537083026
 MonoBehaviour:
   m_ObjectHideFlags: 1
