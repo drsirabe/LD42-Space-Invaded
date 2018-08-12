@@ -9,49 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1184482591685474}
+  m_RootGameObject: {fileID: 1815059992188196}
   m_IsPrefabAsset: 1
---- !u!1 &1184482591685474
+--- !u!1 &1815059992188196
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4697416588546352}
-  - component: {fileID: 33935161862376486}
-  - component: {fileID: 23692638079019178}
-  - component: {fileID: 108227041372555868}
-  - component: {fileID: 114256288153562398}
-  - component: {fileID: 54774194603327914}
-  - component: {fileID: 64280212466736994}
-  - component: {fileID: 114047412196511452}
-  m_Layer: 10
-  m_Name: Little_Pew_Pew (1)
+  - component: {fileID: 4437169856990026}
+  - component: {fileID: 33165412637491978}
+  - component: {fileID: 23245938477246990}
+  - component: {fileID: 54242152056807754}
+  - component: {fileID: 114555736965896286}
+  - component: {fileID: 108051882717512402}
+  - component: {fileID: 136476206884143192}
+  m_Layer: 11
+  m_Name: PewLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4697416588546352
+--- !u!4 &4437169856990026
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1184482591685474}
-  m_LocalRotation: {x: -4.3297806e-17, y: 0.7071068, z: 0.7071068, w: -4.3297806e-17}
-  m_LocalPosition: {x: 0, y: 9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1815059992188196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.484, z: 0}
+  m_LocalScale: {x: 0.4, y: 1, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23692638079019178
+--- !u!23 &23245938477246990
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1184482591685474}
+  m_GameObject: {fileID: 1815059992188196}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -61,9 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 3c031b5bdde1edc4fb169cde0500a76c, type: 2}
-  - {fileID: 2100000, guid: 696783a771d4e5f45a7b9a4fb0c75274, type: 2}
-  - {fileID: 2100000, guid: a5cffe96e3c8cb94b97245117e60b730, type: 2}
+  - {fileID: 2100000, guid: 17db15a487c5b584198714c29b5386a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,19 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33935161862376486
+--- !u!33 &33165412637491978
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1184482591685474}
-  m_Mesh: {fileID: 4300000, guid: 2f7593acdc840de469f1872886440f07, type: 3}
---- !u!54 &54774194603327914
+  m_GameObject: {fileID: 1815059992188196}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54242152056807754
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1184482591685474}
+  m_GameObject: {fileID: 1815059992188196}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -105,32 +102,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
---- !u!64 &64280212466736994
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1184482591685474}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 2f7593acdc840de469f1872886440f07, type: 3}
---- !u!108 &108227041372555868
+--- !u!108 &108051882717512402
 Light:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1184482591685474}
+  m_GameObject: {fileID: 1815059992188196}
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.25, g: 0.6665546, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 2
+  m_Color: {r: 0.37519568, g: 0.35686278, b: 0.9607843, a: 1}
+  m_Intensity: 5
+  m_Range: 0.10036445
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -156,33 +139,28 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114047412196511452
+--- !u!114 &114555736965896286
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1184482591685474}
+  m_GameObject: {fileID: 1815059992188196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2307419522eb1cd45b97a241b5475c27, type: 3}
+  m_Script: {fileID: 11500000, guid: 603d0be3245e4134ebf75d52a459804e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1815059992188196, guid: bf192d120777c9b49bf691543cad9bd1, type: 2}
-  projectileSpeed: 50
-  projectileFireRampUp: 5
-  projectileFireCooldown: 2
-  speed: 1
-  orbitalSpeed: 25
-  orbitDistanceFromEarthCentre: 4
---- !u!114 &114256288153562398
-MonoBehaviour:
+  Damage: 400
+--- !u!136 &136476206884143192
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1184482591685474}
+  m_GameObject: {fileID: 1815059992188196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2ae50673557e64c89205e588ccd810, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 500
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
