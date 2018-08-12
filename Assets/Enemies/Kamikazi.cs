@@ -5,6 +5,8 @@ using UnityEngine;
 public class Kamikazi : MonoBehaviour {
 
     [SerializeField] float speed = 1;
+    [SerializeField] float boostedSpeed = 5;
+    [SerializeField] float distanceFromEarthCentreBoosts = 0;
 
     GameObject target;
     
@@ -16,4 +18,14 @@ public class Kamikazi : MonoBehaviour {
         Rigidbody kamikaziBody = gameObject.GetComponent<Rigidbody>();
         kamikaziBody.velocity = (target.transform.position - gameObject.transform.position).normalized * speed;
     }
+
+    private void Update()
+    {
+        if((target.transform.position - gameObject.transform.position).magnitude <= distanceFromEarthCentreBoosts)
+        {
+            Rigidbody kamikaziBody = gameObject.GetComponent<Rigidbody>();
+            kamikaziBody.velocity = (target.transform.position - gameObject.transform.position).normalized * boostedSpeed;
+        }
+    }
+
 }

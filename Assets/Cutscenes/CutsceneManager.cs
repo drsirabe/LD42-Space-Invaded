@@ -8,16 +8,16 @@ public class CutsceneManager : MonoBehaviour {
     //Attach to image object in cutscene and populate with sprites.
 
     [SerializeField] Sprite[] Scenes;
-    GameManager gameManager = null;
+    LevelChanger levelChanger= null;
     Image currentImage;
 
     int currentScene = 0;
 
 	// Use this for initialization
 	void Start () {
+        levelChanger = FindObjectOfType<LevelChanger>();
         currentScene = 0;
         currentImage = GetComponent<Image>();
-        print(currentImage);
 	}
 	
 	// Update is called once per frame
@@ -25,7 +25,7 @@ public class CutsceneManager : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))  { currentScene = Mathf.Clamp(currentScene - 1, 0, Scenes.Length-1); }
         if (Input.GetKeyDown(KeyCode.RightArrow)) { currentScene = Mathf.Clamp(currentScene + 1, 0, Scenes.Length-1); }
-        if (Input.GetKeyDown(KeyCode.Return))     { gameManager.NextLevel(); }
+        if (Input.GetKeyDown(KeyCode.Return))     { levelChanger.NextLevel(); }
 
         currentImage.sprite = Scenes[currentScene];
 	}

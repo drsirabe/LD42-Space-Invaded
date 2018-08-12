@@ -430,7 +430,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114797123626223226, guid: 747e906510890bd40a57545b95fa609e,
+      - m_Target: {fileID: 114539214901802856, guid: 4022fc6a8a5475847b57c57b44c9517d,
           type: 2}
         m_MethodName: MenuScreen
         m_Mode: 1
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114797123626223226, guid: 747e906510890bd40a57545b95fa609e,
+      - m_Target: {fileID: 114539214901802856, guid: 4022fc6a8a5475847b57c57b44c9517d,
           type: 2}
         m_MethodName: Quit
         m_Mode: 1

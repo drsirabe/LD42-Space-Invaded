@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
     [SerializeField] GameObject orbiter2 = null;
     [SerializeField] GameObject projectile = null;
     [SerializeField] Text planetHealthText = null;
-    GameManager gameManager = null;
+    LevelChanger levelChanger = null;
     GameObject projectilesParent = null;
     float planetCurrentHealth;
 
@@ -23,7 +23,7 @@ public class Player : MonoBehaviour {
         projectilesParent = new GameObject("Projectiles");
         planetCurrentHealth = planetMaxHealth;
         planetHealthText.text = "Planet Health: " + planetCurrentHealth.ToString();
-        gameManager = GameObject.FindObjectOfType<GameManager>();
+        levelChanger = GameObject.FindObjectOfType<LevelChanger>();
     }
 	
 	// Update is called once per frame
@@ -72,7 +72,7 @@ public class Player : MonoBehaviour {
 
             if (planetCurrentHealth == 0f)
             {
-                gameManager.LoseScreen();
+                levelChanger.LoseScreen();
             }
         }
     }
