@@ -395,6 +395,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114987968342687090, guid: ea8a4eddda7edcb4bb1812ca31c51fc2,
+        type: 2}
+      propertyPath: yRotationsPerMinute
+      value: 44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea8a4eddda7edcb4bb1812ca31c51fc2, type: 2}
   m_IsPrefabAsset: 0
@@ -445,7 +450,7 @@ Prefab:
     - target: {fileID: 114797123626223226, guid: 747e906510890bd40a57545b95fa609e,
         type: 2}
       propertyPath: levelTime
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 747e906510890bd40a57545b95fa609e, type: 2}
@@ -460,22 +465,22 @@ Prefab:
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: enemyPrefab.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: maxTimeBetweenSpawns.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: minTimeBetweenSpawns.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: timeBetweenSpawnsDecrement.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4033626081742774, guid: 18c32f5763c4c7c4f81fec54c79319d3, type: 2}
       propertyPath: m_LocalPosition.x
@@ -518,27 +523,27 @@ Prefab:
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: maxTimeBetweenSpawns.Array.data[1]
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: minTimeBetweenSpawns.Array.data[1]
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: timeBetweenSpawnsDecrement.Array.data[1]
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: maxTimeBetweenSpawns.Array.data[0]
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: minTimeBetweenSpawns.Array.data[2]
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
@@ -548,12 +553,28 @@ Prefab:
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: minTimeBetweenSpawns.Array.data[0]
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
         type: 2}
       propertyPath: timeBetweenSpawnsDecrement.Array.data[0]
-      value: 0.3
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
+        type: 2}
+      propertyPath: enemyPrefab.Array.data[2]
+      value: 
+      objectReference: {fileID: 1184482591685474, guid: 317412fd0678f524b925042a2292acca,
+        type: 2}
+    - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
+        type: 2}
+      propertyPath: maxTimeBetweenSpawns.Array.data[2]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114055913590479568, guid: 18c32f5763c4c7c4f81fec54c79319d3,
+        type: 2}
+      propertyPath: timeBetweenSpawnsDecrement.Array.data[2]
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c32f5763c4c7c4f81fec54c79319d3, type: 2}

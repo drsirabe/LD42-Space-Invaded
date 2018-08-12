@@ -39,7 +39,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1184482591685474}
-  m_LocalRotation: {x: -4.3297806e-17, y: 0.7071068, z: 0.7071068, w: -4.3297806e-17}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2307419522eb1cd45b97a241b5475c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1815059992188196, guid: bf192d120777c9b49bf691543cad9bd1, type: 2}
+  projectile: {fileID: 1745080150695890, guid: bf192d120777c9b49bf691543cad9bd1, type: 2}
   projectileSpeed: 50
   projectileFireRampUp: 5
   projectileFireCooldown: 2

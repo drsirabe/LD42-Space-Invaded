@@ -13,10 +13,12 @@ public class LittlePewPew : MonoBehaviour
     [SerializeField] float orbitalSpeed = 45f;
     [SerializeField] float orbitDistanceFromEarthCentre = 4f;
 
+    Light chargingLight;
     bool orbiting;
     bool firing;
     GameObject target;
     float timeCounter;
+    
 
 
     private void Start()
@@ -24,6 +26,8 @@ public class LittlePewPew : MonoBehaviour
         timeCounter = 0f;
         orbiting = false;
         firing = false;
+        chargingLight = GetComponent<Light>();
+        chargingLight.intensity = 0;
         target = GameObject.FindGameObjectWithTag("Player");
         transform.LookAt(target.transform.position);
         Rigidbody orbiterBody = gameObject.GetComponent<Rigidbody>();
@@ -43,6 +47,7 @@ public class LittlePewPew : MonoBehaviour
         {
             gameObject.transform.RotateAround(target.transform.position, Vector3.forward, -orbitalSpeed * Time.deltaTime);
             timeCounter += Time.deltaTime;
+            chargingLight.intensity = timeCounter;
             if( timeCounter >= projectileFireRampUp)
             {
                 firing = true;
@@ -56,6 +61,7 @@ public class LittlePewPew : MonoBehaviour
             if(timeCounter == 0f)
             {
                 Fire();
+                chargingLight.intensity = 0f;
             }
 
             timeCounter += Time.deltaTime;

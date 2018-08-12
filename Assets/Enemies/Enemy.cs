@@ -7,6 +7,11 @@ public class Enemy : MonoBehaviour {
     [SerializeField] float maxHealth = 100f;
     float currentHealth;
 
+    private void Start()
+    {
+        currentHealth = maxHealth;
+    }
+
     void TakeDamage(float damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - damage, 0f, maxHealth);
